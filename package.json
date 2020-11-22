@@ -10,12 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/native": "^5.8.10",
     "axios": "^0.20.0",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-native": "0.63.3",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "react-navigation": "^4.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.0",
