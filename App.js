@@ -1,13 +1,8 @@
 import React from 'react';
-import {Text} from 'react-native';
+import RootStack from './src/routes';
 
 const App = () => {
-  return (
-    <Text>
-      Edit <Text>App.js</Text> to change this screen and then come back to see
-      your edits.
-    </Text>
-  );
+  return <RootStack />;
 };
 
 export default App;

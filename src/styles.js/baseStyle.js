@@ -12,6 +12,19 @@ const COLORS = {
 
 export const colors = COLORS;
 
+export const sizes = {
+  fs10: 10,
+  fs12: 12,
+  fs14: 14,
+  fs16: 16,
+  fs18: 18,
+  fs20: 20,
+  fs24: 24,
+  fs28: 28,
+  fs32: 32,
+  fs50: 50,
+};
+
 export const fonts = {
   light: 'Poppins-Light',
   medium: 'Poppins-Medium',
