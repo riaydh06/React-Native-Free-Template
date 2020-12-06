@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MyPTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyPTTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		22F14EB4257C926400E00FC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		22F14EBE257C92BC00E00FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		22F14EE5257C946D00E00FC4 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 22F14EE4257C946D00E00FC4 /* fonts */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MyPTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyPTTests.m */; };
 		378B6BBB4CBBE348E7FB713C /* libPods-MyPT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E17D7E367A9FEFA3FD9DC9 /* libPods-MyPT.a */; };
 		3DC7BF23FBD41F5D15660833 /* libPods-MyPT-MyPTTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D5D634A2C3C03EFE011918 /* libPods-MyPT-MyPTTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		CF44ABA24B098CA84AE0A4C8 /* libPods-MyPT-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0C0ABBF9FF90DE588BD3A0 /* libPods-MyPT-tvOSTests.a */; };
 		D9CAE3114544249DA5973790 /* libPods-MyPT-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3524077E66679391DA1581 /* libPods-MyPT-tvOS.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MyPT/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MyPT/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MyPT/main.m; sourceTree = "<group>"; };
+		22F14EE4257C946D00E00FC4 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = MyPT/fonts; sourceTree = "<group>"; };
 		2C0C0ABBF9FF90DE588BD3A0 /* libPods-MyPT-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPT-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* MyPT-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyPT-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* MyPT-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyPT-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* MyPT */ = {
 			isa = PBXGroup;
 			children = (
+				22F14EE4257C946D00E00FC4 /* fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -161,7 +164,6 @@
 				E3957F7E352CD93BA59F1301 /* Pods-MyPT-tvOSTests.debug.xcconfig */,
 				2D678DAAE1CB742493C07463 /* Pods-MyPT-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -340,8 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				22F14EE5257C946D00E00FC4 /* fonts in Resources */,
+				22F14EBE257C92BC00E00FC4 /* LaunchScreen.storyboard in Resources */,
+				22F14EB4257C926400E00FC4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +378,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		06A7D2B118DFDC21F7745539 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
