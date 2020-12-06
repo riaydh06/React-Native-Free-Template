@@ -15,7 +15,7 @@ const RootStack = createStackNavigator(
           backgroundColor: colors.error,
         },
         headerTitleStyle: {
-          fontFamily: fonts.light,
+          fontFamily: fonts.extraLightItalic,
           fontSize: 20,
           color: colors.dark,
         },
