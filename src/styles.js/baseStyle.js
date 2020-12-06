@@ -5,8 +5,8 @@ const COLORS = {
   white: '#ffffff',
   info: '#007AFF',
   success: '#52C41A',
-  failed: '#E46353',
-  gray: '#D8D8D8',
+  error: '#E46353',
+  light: '#D8D8D8',
   gradient: ['#1bdaf6', '#b2ebf9'],
 };
 
