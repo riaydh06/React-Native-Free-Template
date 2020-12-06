@@ -7,6 +7,8 @@ const COLORS = {
   success: '#52C41A',
   error: '#E46353',
   light: '#D8D8D8',
+  text: '#212121',
+  text2: '#424242',
   gradient: ['#1bdaf6', '#b2ebf9'],
 };
 
@@ -23,6 +25,18 @@ export const sizes = {
   fs28: 28,
   fs32: 32,
   fs50: 50,
+};
+
+export const weights = {
+  fw100: 100,
+  fw200: 200,
+  fw300: 300,
+  fw400: 400,
+  fw500: 500,
+  fw600: 600,
+  fw700: 700,
+  fw800: 800,
+  fw900: 900,
 };
 
 export const fonts = {

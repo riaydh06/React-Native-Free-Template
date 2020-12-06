@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {colors, families, fontSizes} from '../../../../Assets/Styles/base';
+import {colors, fonts, sizes} from '../../../styles.js/baseStyle';
 
 const TextComponent = ({
   content,
@@ -30,9 +30,9 @@ const TextComponent = ({
 
 Text.defaultProps = {
   content: '',
-  family: families.regular,
-  color: colors.colorText,
-  size: fontSizes.fs16,
+  family: fonts.regular,
+  color: colors.text,
+  size: sizes.fs14,
   align: 'left',
   weight: 'normal',
   style: 'normal',
