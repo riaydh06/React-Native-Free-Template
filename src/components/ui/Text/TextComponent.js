@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {colors, fonts, sizes} from '../../../styles.js/baseStyle';
+import {colors, fonts, sizes} from '../../../styles/baseStyle';
+import {string, number, oneOfType} from 'prop-types';
 
 const TextComponent = ({
   content,
@@ -28,7 +29,7 @@ const TextComponent = ({
   );
 };
 
-Text.defaultProps = {
+TextComponent.defaultProps = {
   content: '',
   family: fonts.regular,
   color: colors.text,
@@ -36,6 +37,16 @@ Text.defaultProps = {
   align: 'left',
   weight: 'normal',
   style: 'normal',
+};
+
+TextComponent.propTypes = {
+  content: string.isRequired,
+  family: string,
+  color: string,
+  size: number,
+  align: string,
+  weight: oneOfType([string, number]),
+  style: string,
 };
 
 export default TextComponent;
