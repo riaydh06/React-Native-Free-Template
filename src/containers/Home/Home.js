@@ -1,14 +1,14 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import {ButtonPrimary, InputPrimary} from '../../components/ui';
+import {ButtonPrimary, InputPrimary, TextComponent} from '../../components/ui';
+import {PagePrimary} from '../../components/wedget';
 
 const Home = () => {
   return (
-    <View style={{flex: 1, paddingLeft: 15, paddingRight: 15}}>
-      <Text>Hi</Text>
+    <PagePrimary>
+      <TextComponent content="hello" />
       <InputPrimary placeholder="jdkfjkdjkdf" />
       <ButtonPrimary content="SIGN UP" onPress={() => {}} />
-    </View>
+    </PagePrimary>
   );
 };
 
