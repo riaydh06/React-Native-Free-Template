@@ -8,6 +8,8 @@ export const navigationOption = (show, title, background, color) => {
       headerBackTitle: null,
       headerStyle: {
         backgroundColor: background || colors.background,
+        elevation: null,
+        shadowOpacity: 0,
       },
       headerTitleStyle: {
         fontFamily: fonts.regular,

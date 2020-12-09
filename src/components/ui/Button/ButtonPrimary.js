@@ -6,14 +6,18 @@ import {
   View,
 } from 'react-native';
 import {string, func, bool} from 'prop-types';
-import {colors} from '../../../styles/baseStyle';
+import {colors, fonts, weights} from '../../../styles/baseStyle';
 import TextComponent from '../Text/TextComponent';
+import {strings} from '../../../locales/i18n';
 
 const ButtonPrimary = ({content, disabled, onPress, loading}) => {
   const opacity = disabled ? 0.5 : 1;
   return (
-    <TouchableOpacity disabled={disabled} onPress={onPress()}>
-      <View style={[styles.wrapper, {opacity}]}>
+    <TouchableOpacity
+      style={styles.wrapper}
+      disabled={disabled}
+      onPress={onPress()}>
+      <View style={[styles.viewWrapper, {opacity}]}>
         {loading && (
           <ActivityIndicator
             size="small"
@@ -21,7 +25,14 @@ const ButtonPrimary = ({content, disabled, onPress, loading}) => {
             style={styles.loaderStyle}
           />
         )}
-        {!loading && <TextComponent content={content} disabled />}
+        {!loading && (
+          <TextComponent
+            content={strings(content)}
+            family={fonts.semiBold}
+            weight={weights.fw500}
+            disabled
+          />
+        )}
       </View>
     </TouchableOpacity>
   );
@@ -29,6 +40,9 @@ const ButtonPrimary = ({content, disabled, onPress, loading}) => {
 
 const styles = StyleSheet.create({
   wrapper: {
+    width: '100%',
+  },
+  viewWrapper: {
     width: '100%',
     height: 42,
     backgroundColor: colors.secondary,

@@ -12,7 +12,7 @@ const RootStack = createStackNavigator(
     },
     Login: {
       screen: Login,
-      navigationOptions: navigationOption(true, 'Login'),
+      navigationOptions: navigationOption(true, ''),
     },
   },
   {

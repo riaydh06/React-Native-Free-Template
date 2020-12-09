@@ -2,8 +2,10 @@ import React from 'react';
 import {Text} from 'react-native';
 import {colors, fonts, sizes} from '../../../styles/baseStyle';
 import {string, number, oneOfType} from 'prop-types';
-
+import {strings} from '../../../locales/i18n';
 const TextComponent = ({
+  i18n,
+  value,
   content,
   family,
   weight,
@@ -24,7 +26,7 @@ const TextComponent = ({
         textAlign: align,
         ...styles,
       }}>
-      {content}
+      {i18n ? strings(i18n, value) : content}
     </Text>
   );
 };

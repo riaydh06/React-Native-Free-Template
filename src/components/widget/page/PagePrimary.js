@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     paddingLeft: 15,
     paddingRight: 15,
+    alignItems: 'center',
   },
 });
 

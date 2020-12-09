@@ -1,23 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {Image, View} from 'react-native';
 import {PagePrimary} from '../../../components/widget';
 import {
   ButtonPrimary,
   InputPrimary,
   TextComponent,
 } from '../../../components/ui';
-import {strings} from '../../../locales/i18n';
+import {assets} from '../../../assets';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   return (
     <PagePrimary>
-      <TextComponent content="hello" />
-      <TextComponent content={strings('LOGIN.Login.hello')} />
+      <Image source={assets.Logo02} />
+      <TextComponent i18n="LOGIN.TITLE" />
       <InputPrimary
-        placeholder="jdkfjkdjkdf"
-        value={''}
-        onChangeText={() => {}}
+        placeholder="PLACEHOLDER.EMAIL"
+        value={email}
+        onChangeText={(text) => setEmail(text)}
       />
-      <ButtonPrimary content="SIGN UP" onPress={() => {}} />
+      <InputPrimary
+        placeholder="PLACEHOLDER.PASSWORD"
+        value={password}
+        secureTextEntry
+        onChangeText={(text) => setPassword(text)}
+      />
+      <ButtonPrimary content="BUTTON.SIGN_IN" onPress={() => {}} />
+      <TextComponent i18n="LOGIN.FORGOT_PASSWORD" />
     </PagePrimary>
   );
 };

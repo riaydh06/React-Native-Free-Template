@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, TextInput, View} from 'react-native';
 import {string, bool, func, number} from 'prop-types';
 import {fonts, colors} from '../../../styles/baseStyle';
+import {strings} from '../../../locales/i18n';
 
 const InputPrimary = ({
   placeholder,
@@ -22,9 +23,10 @@ const InputPrimary = ({
 }) => (
   <View style={styles.inputWrapper}>
     <TextInput
+      style={styles.input}
       contextMenuHidden={contextMenuHidden}
       submit={submit}
-      placeholder={placeholder}
+      placeholder={strings(placeholder)}
       value={value}
       onChangeText={onChangeText}
       onBlur={onBlur}
@@ -48,7 +50,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.light,
     borderRadius: 4,
-    fontFamily: fonts.regular,
     justifyContent: 'center',
     paddingLeft: 15,
     marginBottom: 10,
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     maxWidth: '100%',
     fontFamily: fonts.regular,
     color: colors.text2,
+    paddingBottom: 0,
   },
 });
 

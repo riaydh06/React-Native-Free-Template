@@ -1,5 +1,4 @@
 {
-  "Login": {
-    "hello": "Continue with \nphone number"
-  }
+  "TITLE": "Sign in to continue",
+  "FORGOT_PASSWORD": "Forgot password?"
 }
