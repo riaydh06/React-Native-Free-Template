@@ -1,6 +1,6 @@
 import React from 'react';
 import {ButtonPrimary, InputPrimary, TextComponent} from '../../components/ui';
-import {PagePrimary} from '../../components/wedget';
+import {PagePrimary} from '../../components/widget';
 
 const Home = () => {
   return (

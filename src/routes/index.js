@@ -1,30 +1,22 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
 import HomeScreen from '../containers/Home/Home';
-import {colors, fonts, sizes} from '../styles/baseStyle';
+import Login from '../containers/Auth/Login/Login';
+import {navigationOption} from '../constants/route';
 
 const RootStack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
-      navigationOptions: () => ({
-        // headerShown: false,
-        title: 'fkdjkfd',
-        headerTintColor: colors.error,
-        headerBackTitle: null,
-        headerStyle: {
-          backgroundColor: colors.background,
-        },
-        headerTitleStyle: {
-          fontFamily: fonts.regular,
-          fontSize: sizes.fs20,
-          color: colors.dark,
-        },
-      }),
+      navigationOptions: navigationOption(true, 'Login'),
+    },
+    Login: {
+      screen: Login,
+      navigationOptions: navigationOption(true, 'Login'),
     },
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Login',
   },
 );
 export default createAppContainer(RootStack);
