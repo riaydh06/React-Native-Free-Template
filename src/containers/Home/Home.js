@@ -7,7 +7,7 @@ const Home = () => {
     <PagePrimary>
       <TextComponent content="hello" />
       <InputPrimary placeholder="jdkfjkdjkdf" />
-      <ButtonPrimary content="SIGN UP" onPress={() => {}} />
+      <ButtonPrimary content="SIGN UP" disabled onPress={() => {}} />
     </PagePrimary>
   );
 };

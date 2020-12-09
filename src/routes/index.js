@@ -1,7 +1,7 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
 import HomeScreen from '../containers/Home/Home';
-import {colors, fonts} from '../styles/baseStyle';
+import {colors, fonts, sizes} from '../styles/baseStyle';
 
 const RootStack = createStackNavigator(
   {
@@ -10,13 +10,14 @@ const RootStack = createStackNavigator(
       navigationOptions: () => ({
         // headerShown: false,
         title: 'fkdjkfd',
+        headerTintColor: colors.error,
         headerBackTitle: null,
         headerStyle: {
-          backgroundColor: colors.error,
+          backgroundColor: colors.background,
         },
         headerTitleStyle: {
-          fontFamily: fonts.extraLightItalic,
-          fontSize: 20,
+          fontFamily: fonts.regular,
+          fontSize: sizes.fs20,
           color: colors.dark,
         },
       }),

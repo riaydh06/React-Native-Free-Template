@@ -1,21 +1,28 @@
 import React from 'react';
-import {ActivityIndicator, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  ActivityIndicator,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {string, func, bool} from 'prop-types';
 import {colors} from '../../../styles/baseStyle';
 import TextComponent from '../Text/TextComponent';
 
-const ButtonPrimary = ({content, disabled, onPress}) => {
-  const opacity = disabled ? 0 : 1;
+const ButtonPrimary = ({content, disabled, onPress, loading}) => {
+  const opacity = disabled ? 0.5 : 1;
   return (
-    <TouchableOpacity style={[styles.wrapper, {opacity}]} onPress={onPress()}>
-      {disabled && (
-        <ActivityIndicator
-          size="small"
-          color={colors.colorText}
-          style={styles.loaderStyle}
-        />
-      )}
-      {!disabled && <TextComponent content={content} disabled />}
+    <TouchableOpacity disabled={disabled} onPress={onPress()}>
+      <View style={[styles.wrapper, {opacity}]}>
+        {loading && (
+          <ActivityIndicator
+            size="small"
+            color={colors.colorText}
+            style={styles.loaderStyle}
+          />
+        )}
+        {!loading && <TextComponent content={content} disabled />}
+      </View>
     </TouchableOpacity>
   );
 };
@@ -41,10 +48,12 @@ ButtonPrimary.propTypes = {
   content: string.isRequired,
   onPress: func.isRequired,
   disabled: bool,
+  loading: bool,
 };
 
 ButtonPrimary.defaultProps = {
   disabled: false,
+  loading: false,
 };
 
 export default ButtonPrimary;
