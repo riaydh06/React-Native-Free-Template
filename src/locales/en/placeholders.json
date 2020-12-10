@@ -1,4 +1,5 @@
 {
   "EMAIL": "Email",
-  "PASSWORD": "Password"
+  "PASSWORD": "Password",
+  "OTP": "OTP"
 }

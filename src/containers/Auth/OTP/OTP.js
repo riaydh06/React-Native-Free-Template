@@ -10,7 +10,7 @@ import {mb15, mb30} from '../../../styles/commonStyle';
 import {fonts, sizes} from '../../../styles/baseStyle';
 
 const Email = ({navigation}) => {
-  const [email, setEmail] = useState('');
+  const [otp, setOtp] = useState('');
 
   return (
     <PagePrimary>
@@ -27,9 +27,10 @@ const Email = ({navigation}) => {
         styles={mb15}
       />
       <InputPrimary
-        placeholder="PLACEHOLDER.EMAIL"
-        value={email}
-        onChangeText={(text) => setEmail(text)}
+        placeholder="PLACEHOLDER.OTP"
+        value={otp}
+        secureTextEntry
+        onChangeText={(text) => setOtp(text)}
         style={mb15}
       />
 
