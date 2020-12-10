@@ -16,7 +16,7 @@ const ButtonPrimary = ({content, disabled, onPress, loading, style}) => {
     <TouchableOpacity
       style={[styles.wrapper, style]}
       disabled={disabled}
-      onPress={onPress()}>
+      onPress={onPress}>
       <View style={[styles.viewWrapper, {opacity}]}>
         {loading && (
           <ActivityIndicator
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   viewWrapper: {
     width: '100%',
-    height: 42,
+    height: 52,
     backgroundColor: colors.secondary,
     borderRadius: 4,
     justifyContent: 'center',

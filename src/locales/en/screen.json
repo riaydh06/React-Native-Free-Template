@@ -5,5 +5,14 @@
     "OR": "--------  OR  ---------",
     "NO_ACCOUNT": "No Account? ",
     "REGISTER_NOW": "Register Now"
+  },
+  "EMAIL": {
+    "TITLE": "Deutsches Ipsum Dolor id latine\n Mercedes Benz complectitur",
+    "CONDITION": "By tapping continue, you agree to Terms and Condition and Privacy Policy of MYPT."
+  },
+  "OTP": {
+    "TITLE": "Verification Code",
+    "SUBTITLE": "Please type the verification code sent to your number +880 1919 88 42 91",
+    "RESEND_OTP": "Resend OTP "
   }
 }
