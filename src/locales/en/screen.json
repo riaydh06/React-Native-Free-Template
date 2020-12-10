@@ -1,0 +1,9 @@
+{
+  "LOGIN": {
+    "TITLE": "Sign in to continue",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "OR": "--------  OR  ---------",
+    "NO_ACCOUNT": "No Account? ",
+    "REGISTER_NOW": "Register Now"
+  }
+}

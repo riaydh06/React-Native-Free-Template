@@ -1,9 +1,9 @@
 import buttons from './buttons.json';
 import placeholders from './placeholders.json';
-import login from './login.json';
+import screen from './screen.json';
 
 export default {
   BUTTON: buttons,
   PLACEHOLDER: placeholders,
-  LOGIN: login,
+  SCREEN: screen,
 };

@@ -10,11 +10,11 @@ import {colors, fonts, weights} from '../../../styles/baseStyle';
 import TextComponent from '../Text/TextComponent';
 import {strings} from '../../../locales/i18n';
 
-const ButtonPrimary = ({content, disabled, onPress, loading}) => {
+const ButtonPrimary = ({content, disabled, onPress, loading, style}) => {
   const opacity = disabled ? 0.5 : 1;
   return (
     <TouchableOpacity
-      style={styles.wrapper}
+      style={[styles.wrapper, style]}
       disabled={disabled}
       onPress={onPress()}>
       <View style={[styles.viewWrapper, {opacity}]}>

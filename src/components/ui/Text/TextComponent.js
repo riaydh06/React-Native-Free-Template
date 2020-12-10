@@ -14,6 +14,7 @@ const TextComponent = ({
   style,
   styles,
   align,
+  children,
 }) => {
   return (
     <Text
@@ -27,6 +28,7 @@ const TextComponent = ({
         ...styles,
       }}>
       {i18n ? strings(i18n, value) : content}
+      {children}
     </Text>
   );
 };

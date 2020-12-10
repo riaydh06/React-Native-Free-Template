@@ -20,8 +20,9 @@ const InputPrimary = ({
   textContentType,
   multiline,
   contextMenuHidden,
+  style,
 }) => (
-  <View style={styles.inputWrapper}>
+  <View style={[styles.inputWrapper, style]}>
     <TextInput
       style={styles.input}
       contextMenuHidden={contextMenuHidden}
@@ -46,7 +47,7 @@ const InputPrimary = ({
 const styles = StyleSheet.create({
   inputWrapper: {
     width: '100%',
-    height: 42,
+    height: 52,
     borderWidth: 1,
     borderColor: colors.light,
     borderRadius: 4,
@@ -59,6 +60,7 @@ const styles = StyleSheet.create({
     maxWidth: '100%',
     fontFamily: fonts.regular,
     color: colors.text2,
+    paddingTop: 0,
     paddingBottom: 0,
   },
 });
