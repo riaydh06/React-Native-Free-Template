@@ -4,6 +4,11 @@ import HomeScreen from '../containers/Home/Home';
 import Login from '../containers/Auth/Login/Login';
 import Email from '../containers/Auth/Email/Email';
 import OTP from '../containers/Auth/OTP/OTP';
+import StepOne from '../containers/Auth/Steps/StepOne';
+import StepTwo from '../containers/Auth/Steps/StepTwo';
+import StepThree from '../containers/Auth/Steps/StepThree';
+import StepFour from '../containers/Auth/Steps/StepFour';
+import StepFive from '../containers/Auth/Steps/StepFive';
 import {navigationOption} from '../constants/route';
 
 const RootStack = createStackNavigator(
@@ -22,6 +27,26 @@ const RootStack = createStackNavigator(
     },
     OTP: {
       screen: OTP,
+      navigationOptions: navigationOption(true, ''),
+    },
+    StepOne: {
+      screen: StepOne,
+      navigationOptions: navigationOption(true, ''),
+    },
+    StepTwo: {
+      screen: StepTwo,
+      navigationOptions: navigationOption(true, ''),
+    },
+    StepThree: {
+      screen: StepThree,
+      navigationOptions: navigationOption(true, ''),
+    },
+    StepFour: {
+      screen: StepFour,
+      navigationOptions: navigationOption(true, ''),
+    },
+    StepFive: {
+      screen: StepFive,
       navigationOptions: navigationOption(true, ''),
     },
   },

@@ -14,5 +14,25 @@
     "TITLE": "Verification Code",
     "SUBTITLE": "Please type the verification code sent to your number +880 1919 88 42 91",
     "RESEND_OTP": "Resend OTP "
+  },
+  "STEP_ONE": {
+    "STEP": "----- O1 of O5 -----",
+    "TITLE": "Personal Information"
+  },
+  "STEP_TWO": {
+    "STEP": "----- O2 of O5 -----",
+    "TITLE": "Personal Information"
+  },
+  "STEP_THREE": {
+    "STEP": "----- O3 of O5 -----",
+    "TITLE": "Other Information"
+  },
+  "STEP_FOUR": {
+    "STEP": "----- O4 of O5 -----",
+    "TITLE": "Personal Information"
+  },
+  "STEP_FIVE": {
+    "STEP": "----- O5 of O5 -----",
+    "TITLE": "Personal Information"
   }
 }

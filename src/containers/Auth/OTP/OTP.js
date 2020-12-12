@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {StyleSheet} from 'react-native';
 import {PagePrimary} from '../../../components/widget';
 import {
   ButtonPrimary,
@@ -33,7 +32,6 @@ const Email = ({navigation}) => {
         onChangeText={(text) => setOtp(text)}
         style={mb15}
       />
-
       <TextComponent
         i18n="SCREEN.OTP.RESEND_OTP"
         family={fonts.medium}
@@ -45,17 +43,10 @@ const Email = ({navigation}) => {
       <ButtonPrimary
         style={mb15}
         content="BUTTON.CONTINUE"
-        onPress={() => navigation.navigate('Email')}
+        onPress={() => navigation.navigate('StepOne')}
       />
     </PagePrimary>
   );
 };
-
-const styles = StyleSheet.create({
-  iconWrapper: {
-    marginTop: 15,
-    marginBottom: 15,
-  },
-});
 
 export default Email;

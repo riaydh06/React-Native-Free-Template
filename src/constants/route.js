@@ -4,7 +4,7 @@ export const navigationOption = (show, title, background, color) => {
   if (show) {
     return {
       title,
-      headerTintColor: colors.error,
+      headerTintColor: colors.dark,
       headerBackTitle: null,
       headerStyle: {
         backgroundColor: background || colors.background,
