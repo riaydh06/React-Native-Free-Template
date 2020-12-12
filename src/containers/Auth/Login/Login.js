@@ -30,7 +30,11 @@ const Login = ({navigation}) => {
         onChangeText={(text) => setPassword(text)}
         style={mb15}
       />
-      <ButtonPrimary style={mb15} content="BUTTON.SIGN_IN" onPress={() => {}} />
+      <ButtonPrimary
+        style={mb15}
+        content="BUTTON.SIGN_IN"
+        onPress={() => navigation.navigate('Home')}
+      />
 
       <TextComponent i18n="SCREEN.LOGIN.FORGOT_PASSWORD" styles={mb30} />
       <TextComponent i18n="SCREEN.LOGIN.OR" styles={mb40} />

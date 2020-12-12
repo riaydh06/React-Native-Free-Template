@@ -17,7 +17,7 @@ const RootStack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
-      navigationOptions: navigationOption(true, 'Login'),
+      navigationOptions: navigationOption(true, ''),
     },
     Login: {
       screen: Login,
@@ -53,7 +53,7 @@ const RootStack = createStackNavigator(
     },
     Success: {
       screen: Success,
-      navigationOptions: navigationOption(true, ''),
+      navigationOptions: navigationOption(false, ''),
     },
   },
   {
