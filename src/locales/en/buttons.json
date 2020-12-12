@@ -1,5 +1,7 @@
 {
   "SIGN_IN": "SIGN IN",
   "SIGN_UP": "SIGN UP",
-  "CONTINUE": "Continue"
+  "CONTINUE": "Continue",
+  "TRAINER": "I am a trainer",
+  "TRAINEE": "I am a trainee"
 }

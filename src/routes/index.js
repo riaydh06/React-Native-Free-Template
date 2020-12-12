@@ -1,5 +1,7 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
+
+import Welcome from '../containers/Welcome/Welcome';
 import HomeScreen from '../containers/Home/Home';
 import Login from '../containers/Auth/Login/Login';
 import Email from '../containers/Auth/Email/Email';
@@ -15,6 +17,10 @@ import {navigationOption} from '../constants/route';
 
 const RootStack = createStackNavigator(
   {
+    Welcome: {
+      screen: Welcome,
+      navigationOptions: navigationOption(false, ''),
+    },
     Home: {
       screen: HomeScreen,
       navigationOptions: navigationOption(true, ''),
@@ -57,7 +63,7 @@ const RootStack = createStackNavigator(
     },
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: 'Welcome',
   },
 );
 export default createAppContainer(RootStack);

@@ -1,4 +1,7 @@
 {
+  "WELCOME": {
+    "TITLE": "Welcome to"
+  },
   "LOGIN": {
     "TITLE": "Sign in to continue",
     "FORGOT_PASSWORD": "Forgot password?",
