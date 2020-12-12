@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Image, StyleSheet} from 'react-native';
+import {Image} from 'react-native';
 import {PagePrimary} from '../../../components/widget';
 import {
   ButtonPrimary,
@@ -7,14 +7,14 @@ import {
   TextComponent,
 } from '../../../components/ui';
 import {assets} from '../../../assets';
-import {mb15, mb30} from '../../../styles/commonStyle';
+import {mb15, mb30, mt15} from '../../../styles/commonStyle';
 
 const Email = ({navigation}) => {
   const [email, setEmail] = useState('');
 
   return (
     <PagePrimary>
-      <Image source={assets.Logo02} style={styles.iconWrapper} />
+      <Image source={assets.Logo02} style={[mt15, mb15]} />
       <TextComponent i18n="SCREEN.EMAIL.TITLE" align="center" styles={mb15} />
       <InputPrimary
         placeholder="PLACEHOLDER.EMAIL"
@@ -36,12 +36,5 @@ const Email = ({navigation}) => {
     </PagePrimary>
   );
 };
-
-const styles = StyleSheet.create({
-  iconWrapper: {
-    marginTop: 15,
-    marginBottom: 15,
-  },
-});
 
 export default Email;

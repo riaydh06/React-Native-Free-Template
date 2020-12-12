@@ -3,7 +3,7 @@ import {PageSecondary} from '../../../components/widget';
 import {InputPrimary} from '../../../components/ui';
 import {mb15} from '../../../styles/commonStyle';
 
-const StepOne = ({navigation}) => {
+const StepFour = ({navigation}) => {
   const [otp, setOtp] = useState('');
 
   return (
@@ -33,4 +33,4 @@ const StepOne = ({navigation}) => {
   );
 };
 
-export default StepOne;
+export default StepFour;

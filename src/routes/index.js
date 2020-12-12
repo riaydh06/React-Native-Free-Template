@@ -9,6 +9,8 @@ import StepTwo from '../containers/Auth/Steps/StepTwo';
 import StepThree from '../containers/Auth/Steps/StepThree';
 import StepFour from '../containers/Auth/Steps/StepFour';
 import StepFive from '../containers/Auth/Steps/StepFive';
+import Success from '../containers/Auth/Success/Success';
+
 import {navigationOption} from '../constants/route';
 
 const RootStack = createStackNavigator(
@@ -47,6 +49,10 @@ const RootStack = createStackNavigator(
     },
     StepFive: {
       screen: StepFive,
+      navigationOptions: navigationOption(true, ''),
+    },
+    Success: {
+      screen: Success,
       navigationOptions: navigationOption(true, ''),
     },
   },

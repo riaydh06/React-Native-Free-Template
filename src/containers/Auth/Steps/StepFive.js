@@ -3,14 +3,14 @@ import {PageSecondary} from '../../../components/widget';
 import {InputPrimary} from '../../../components/ui';
 import {mb15} from '../../../styles/commonStyle';
 
-const StepOne = ({navigation}) => {
+const StepFive = ({navigation}) => {
   const [otp, setOtp] = useState('');
 
   return (
     <PageSecondary
       step="SCREEN.STEP_FIVE.STEP"
       title="SCREEN.STEP_FIVE.TITLE"
-      onPress={() => navigation.navigate('StepFive')}>
+      onPress={() => navigation.navigate('Success')}>
       <InputPrimary
         placeholder="PLACEHOLDER.OTP"
         value={otp}
@@ -33,4 +33,4 @@ const StepOne = ({navigation}) => {
   );
 };
 
-export default StepOne;
+export default StepFive;

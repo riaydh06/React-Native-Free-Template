@@ -34,5 +34,10 @@
   "STEP_FIVE": {
     "STEP": "----- O5 of O5 -----",
     "TITLE": "Personal Information"
+  },
+  "SUCCESS": {
+    "STEP": "----- O5 of O5 -----",
+    "TITLE": "Thank you",
+    "SUBTITLE": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import {assets} from '../../../assets';
-import {colors, fonts, sizes} from '../../../styles/baseStyle';
-import {mb15} from '../../../styles/commonStyle';
+import {fonts, sizes} from '../../../styles/baseStyle';
+import {mb10, mb15, mt10} from '../../../styles/commonStyle';
 import {ButtonPrimary, TextComponent} from '../../ui';
 import PagePrimary from './PagePrimary';
 
@@ -36,8 +36,8 @@ const PageSecondary = ({children, step, title, onPress}) => {
 
 const styles = StyleSheet.create({
   iconWrapper: {
-    marginTop: 10,
-    marginBottom: 10,
+    ...mt10,
+    ...mb10,
     height: 30,
     width: 100,
   },
