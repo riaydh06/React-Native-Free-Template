@@ -4,11 +4,11 @@ import {string, func, bool} from 'prop-types';
 import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {assets} from '../../../assets';
 import {TextComponent} from '../../ui';
-import {mb5, row, mr15, w100, p15, m10} from '../../../styles/commonStyle';
+import {mb5, row, w100, m10} from '../../../styles/commonStyle';
 
 const HorizontalCard = ({title, subtitle, onPress, point, rating}) => {
   return (
-    <TouchableOpacity style={w100} onPress={onPress}>
+    <TouchableOpacity style={{width: 280}} onPress={onPress}>
       <View style={styles.contentWrapper}>
         <View>
           <Image source={assets.Appointment02} style={styles.imageStyle} />
@@ -27,7 +27,7 @@ const HorizontalCard = ({title, subtitle, onPress, point, rating}) => {
               size={sizes.fs12}
             />
           </View>
-          <View style={[row, {justifyContent: 'space-between'}]}>
+          <View style={styles.bottomWrapper}>
             <TextComponent
               content={point}
               family={fonts.semiBold}
@@ -56,13 +56,17 @@ const styles = StyleSheet.create({
   },
   imageStyle: {
     ...w100,
-    height: 150,
+    height: 135,
     borderTopRightRadius: 10,
     borderTopLeftRadius: 10,
   },
   leftWrapper: {
     ...m10,
-    height: 100,
+    height: 80,
+    justifyContent: 'space-between',
+  },
+  bottomWrapper: {
+    ...row,
     justifyContent: 'space-between',
   },
 });
