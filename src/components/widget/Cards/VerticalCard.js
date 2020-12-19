@@ -12,11 +12,12 @@ import {
   p15,
   w50,
   flex1,
+  mb10,
 } from '../../../styles/commonStyle';
 
 const VerticalCard = ({title, subtitle, onPress, point, rating}) => {
   return (
-    <TouchableOpacity style={w100} onPress={onPress}>
+    <TouchableOpacity style={[w100, mb10]} onPress={onPress}>
       <View style={styles.contentWrapper}>
         <View style={mr15}>
           <Image source={assets.Appointment02} style={styles.imageStyle} />
