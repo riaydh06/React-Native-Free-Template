@@ -1,40 +1,54 @@
 import React from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {string, func, bool} from 'prop-types';
-import {colors, fonts, weights} from '../../../styles/baseStyle';
+import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {assets} from '../../../assets';
 import {TextComponent} from '../../ui';
+import {
+  mb5,
+  row,
+  mr15,
+  w100,
+  p15,
+  w50,
+  flex1,
+} from '../../../styles/commonStyle';
 
 const ButtonPrimary = ({title, subtitle, onPress, disabled, point, rating}) => {
   return (
-    <TouchableOpacity
-      style={styles.wrapper}
-      disabled={disabled}
-      onPress={onPress}>
-      <View style={{flexDirection: 'row', backgroundColor: colors.white}}>
-        <View style={{padding: 10}}>
-          <Image
-            source={assets.Appointment02}
-            style={{width: 90, height: 90}}
-          />
+    <TouchableOpacity style={w100} disabled={disabled} onPress={onPress}>
+      <View style={styles.contentWrapper}>
+        <View style={mr15}>
+          <Image source={assets.Appointment02} style={styles.imageStyle} />
         </View>
-        <View style={{width: '100%', margin: 10}}>
-          <TextComponent
-            content={title}
-            family={fonts.semiBold}
-            weight={weights.fw500}
-          />
-          <TextComponent content={subtitle} />
-          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+        <View style={styles.leftWrapper}>
+          <View>
+            <TextComponent
+              content={title}
+              family={fonts.semiBold}
+              weight={weights.fw500}
+              styles={mb5}
+            />
+            <TextComponent
+              content={subtitle}
+              color={colors.text2}
+              size={sizes.fs12}
+            />
+          </View>
+          <View style={row}>
             <TextComponent
               content={point}
               family={fonts.semiBold}
               weight={weights.fw500}
+              size={sizes.fs12}
+              styles={w50}
             />
             <TextComponent
               content={rating}
               family={fonts.semiBold}
               weight={weights.fw500}
+              size={sizes.fs12}
+              color={colors.text2}
             />
           </View>
         </View>
@@ -44,11 +58,20 @@ const ButtonPrimary = ({title, subtitle, onPress, disabled, point, rating}) => {
 };
 
 const styles = StyleSheet.create({
-  wrapper: {
-    width: '100%',
+  contentWrapper: {
+    ...w100,
+    flexDirection: 'row',
+    backgroundColor: colors.white,
+    ...p15,
   },
-  viewWrapper: {
-    width: '100%',
+  imageStyle: {
+    width: 100,
+    height: 100,
+  },
+  leftWrapper: {
+    ...flex1,
+    flexGrow: 1,
+    justifyContent: 'space-between',
   },
 });
 

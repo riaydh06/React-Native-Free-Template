@@ -1,5 +1,18 @@
 // Utility styles
 
+// row
+export const row = {
+  flexDirection: 'row',
+};
+
+// margin
+export const m5 = {
+  margin: 5,
+};
+export const m10 = {
+  margin: 10,
+};
+
 // margin top
 export const mt5 = {
   marginTop: 5,
@@ -59,6 +72,14 @@ export const mr15 = {
   marginRight: 15,
 };
 
+// padding
+export const p10 = {
+  padding: 10,
+};
+export const p15 = {
+  padding: 15,
+};
+
 // padding top
 export const pt10 = {
   paddingTop: 10,
@@ -82,6 +103,11 @@ export const pr15 = {
 
 export const flex1 = {
   flex: 1,
+};
+
+// width
+export const w50 = {
+  width: '50%',
 };
 
 export const w100 = {
