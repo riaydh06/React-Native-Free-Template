@@ -1,13 +1,17 @@
 import React from 'react';
-import {ButtonPrimary, InputPrimary, TextComponent} from '../../components/ui';
-import {PagePrimary} from '../../components/widget';
+import {TextComponent} from '../../components/ui';
+import {PagePrimary, VerticalCard} from '../../components/widget';
 
 const Home = () => {
   return (
     <PagePrimary>
       <TextComponent content="hello" />
-      <InputPrimary placeholder="jdkfjkdjkdf" onChangeText={() => {}} />
-      <ButtonPrimary content="SIGN UP" disabled onPress={() => {}} />
+      <VerticalCard
+        title="Bally Total Fitness"
+        subtitle="Established in 1999 this is the best gym in this area with 1200 registered clients"
+        point="3.8 ml"
+        rating="3.9"
+      />
     </PagePrimary>
   );
 };
