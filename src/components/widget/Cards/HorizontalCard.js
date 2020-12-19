@@ -4,21 +4,13 @@ import {string, func, bool} from 'prop-types';
 import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {assets} from '../../../assets';
 import {TextComponent} from '../../ui';
-import {
-  mb5,
-  row,
-  mr15,
-  w100,
-  p15,
-  w50,
-  flex1,
-} from '../../../styles/commonStyle';
+import {mb5, row, mr15, w100, p15, m10} from '../../../styles/commonStyle';
 
-const VerticalCard = ({title, subtitle, onPress, point, rating}) => {
+const HorizontalCard = ({title, subtitle, onPress, point, rating}) => {
   return (
     <TouchableOpacity style={w100} onPress={onPress}>
       <View style={styles.contentWrapper}>
-        <View style={mr15}>
+        <View>
           <Image source={assets.Appointment02} style={styles.imageStyle} />
         </View>
         <View style={styles.leftWrapper}>
@@ -35,13 +27,12 @@ const VerticalCard = ({title, subtitle, onPress, point, rating}) => {
               size={sizes.fs12}
             />
           </View>
-          <View style={row}>
+          <View style={[row, {justifyContent: 'space-between'}]}>
             <TextComponent
               content={point}
               family={fonts.semiBold}
               weight={weights.fw500}
               size={sizes.fs12}
-              styles={w50}
             />
             <TextComponent
               content={rating}
@@ -60,30 +51,31 @@ const VerticalCard = ({title, subtitle, onPress, point, rating}) => {
 const styles = StyleSheet.create({
   contentWrapper: {
     ...w100,
-    flexDirection: 'row',
     backgroundColor: colors.white,
-    ...p15,
+    borderRadius: 10,
   },
   imageStyle: {
-    width: 100,
-    height: 100,
+    ...w100,
+    height: 150,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
   },
   leftWrapper: {
-    ...flex1,
-    flexGrow: 1,
+    ...m10,
+    height: 100,
     justifyContent: 'space-between',
   },
 });
 
-VerticalCard.propTypes = {
+HorizontalCard.propTypes = {
   title: string.isRequired,
   subtitle: string.isRequired,
   onPress: func.isRequired,
   loading: bool,
 };
 
-VerticalCard.defaultProps = {
+HorizontalCard.defaultProps = {
   loading: false,
 };
 
-export default VerticalCard;
+export default HorizontalCard;
