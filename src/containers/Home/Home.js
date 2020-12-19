@@ -61,9 +61,14 @@ const Home = () => {
 
           <ListHeader title="Featured Trainer" onPress={() => {}} />
           <HorizontalList items={items} />
+        </View>
+        <View style={ph15}>
+          <ListHeader title="All Gym" onPress={() => {}} />
+        </View>
+        <VerticalList items={items} />
+        <View style={ph15}>
           <ListHeader title="All Trainer" onPress={() => {}} />
         </View>
-
         <VerticalList items={items} />
       </ScrollView>
     </PagePrimary>
