@@ -101,6 +101,22 @@ export const pr15 = {
   paddingRight: 15,
 };
 
+// paddingHorizontal
+export const ph10 = {
+  paddingHorizontal: 10,
+};
+export const ph15 = {
+  paddingHorizontal: 15,
+};
+
+// paddingHorizontal
+export const pv10 = {
+  paddingVertical: 10,
+};
+export const pv15 = {
+  paddingVertical: 15,
+};
+
 export const flex1 = {
   flex: 1,
 };

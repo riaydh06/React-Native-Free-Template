@@ -3,7 +3,7 @@ import {ScrollView} from 'react-native';
 import HorizontalCard from '../Cards/HorizontalCard';
 
 const HorizontalList = ({items, onPress}) => (
-  <ScrollView horizontal>
+  <ScrollView horizontal showsHorizontalScrollIndicator={false}>
     {items.map((item) => (
       <HorizontalCard
         key={item.id}
