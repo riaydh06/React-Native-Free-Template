@@ -9,3 +9,6 @@ export {default as HorizontalCard} from './Cards/HorizontalCard';
 // list
 export {default as VerticalList} from './Lists/VerticalList';
 export {default as HorizontalList} from './Lists/HorizontalList';
+
+// Modal
+export {default as ModalComponent} from './Modal/ModalComponent';

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {PagePrimary} from '../../../components/widget';
+import {ModalComponent, PagePrimary} from '../../../components/widget';
 import {
   ButtonPrimary,
   InputPrimary,
@@ -44,6 +44,12 @@ const Email = ({navigation}) => {
         style={mb15}
         content="BUTTON.CONTINUE"
         onPress={() => navigation.navigate('StepOne')}
+      />
+      <ModalComponent
+        visible
+        options={[]}
+        onSelect={() => {}}
+        onChange={() => {}}
       />
     </PagePrimary>
   );
