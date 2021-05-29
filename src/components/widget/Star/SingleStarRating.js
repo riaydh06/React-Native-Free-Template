@@ -1,0 +1,33 @@
+import React from 'react';
+import {Image, StyleSheet, View} from 'react-native';
+import {assets} from '../../../assets';
+import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
+import {mr5, row} from '../../../styles/commonStyle';
+import {TextComponent} from '../../ui';
+
+const SingleStarRating = ({rating}) => (
+  <View style={styles.wrapper}>
+    <Image source={assets.StarFilled} style={styles.imageStyle} />
+    <TextComponent
+      content={rating}
+      family={fonts.semiBold}
+      weight={weights.fw500}
+      size={sizes.fs12}
+      color={colors.text2}
+    />
+  </View>
+);
+
+const styles = StyleSheet.create({
+  wrapper: {
+    ...row,
+    alignItems: 'center',
+  },
+  imageStyle: {
+    width: 10,
+    height: 10,
+    ...mr5,
+  },
+});
+
+export default SingleStarRating;

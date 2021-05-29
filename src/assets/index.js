@@ -34,5 +34,8 @@ export const assets = {
   Search05: require('./Image/search05.png'),
   Share: require('./Image/Share.png'),
   Success: require('./Image/success.png'),
+  StarEmpty: require('./Image/starEmpty.png'),
+  StarFilled: require('./Image/starFilled.png'),
+  StarHalf: require('./Image/starHalf.png'),
   Twitter: require('./Image/twitter.png'),
 };

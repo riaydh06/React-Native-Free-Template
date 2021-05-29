@@ -35,20 +35,20 @@ const Home = ({navigation}) => {
           />
         </View>
         <GymCardList items={items} />
-        <StarRating
-          rating={3.5}
-          max={5}
-          iconWidth={24}
-          iconHeight={24}
-          onRate={() => {}}
-        />
-        {/* <View style={ph15}>
+        {/* <StarRating
+          half={true}
+          default={2.5}
+          spacing={4}
+          starSize={20}
+          count={5}
+        /> */}
+        <View style={ph15}>
           <ListHeader
             title="All Trainer"
             onPress={() => navigation.navigate('FeaturedTrainer')}
           />
         </View>
-        <TrainerCardList items={items} /> */}
+        <TrainerCardList items={items} />
       </ScrollView>
     </PagePrimary>
   );

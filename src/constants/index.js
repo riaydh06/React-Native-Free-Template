@@ -6,6 +6,7 @@ export const items = [
       'Established in 1999 this is the best gym in this area with 1200 registered clients',
     point: '3.8 ml',
     rating: '3.9',
+    percent: 70,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const items = [
       'Established in 1999 this is the best gym in this area with 1200 registered clients',
     point: '3.8 ml',
     rating: '3.9',
+    percent: 70,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const items = [
       'Established in 1999 this is the best gym in this area with 1200 registered clients',
     point: '3.8 ml',
     rating: '3.9',
+    percent: 60,
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const items = [
       'Established in 1999 this is the best gym in this area with 1200 registered clients',
     point: '3.8 ml',
     rating: '3.9',
+    percent: 90,
   },
   {
     id: 5,
@@ -38,5 +42,6 @@ export const items = [
       'Established in 1999 this is the best gym in this area with 1200 registered clients',
     point: '3.8 ml',
     rating: '3.9',
+    percent: 100,
   },
 ];

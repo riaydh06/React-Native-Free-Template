@@ -4,18 +4,11 @@ import {string, func, bool} from 'prop-types';
 import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {assets} from '../../../assets';
 import {TextComponent} from '../../ui';
-import {
-  mb5,
-  row,
-  mr15,
-  w100,
-  p15,
-  w50,
-  flex1,
-  mb10,
-} from '../../../styles/commonStyle';
+import {mb5, mr15, w100, p15, flex1, mb10} from '../../../styles/commonStyle';
+import {SingleStarRating} from '..';
+import ProgressBar from '../ProgressBar';
 
-const TrainerCard = ({title, subtitle, onPress, point, rating}) => (
+const TrainerCard = ({title, subtitle, onPress, percent, rating}) => (
   <TouchableOpacity style={[w100, mb10]} onPress={onPress}>
     <View style={styles.contentWrapper}>
       <View style={mr15}>
@@ -35,22 +28,9 @@ const TrainerCard = ({title, subtitle, onPress, point, rating}) => (
             size={sizes.fs12}
           />
         </View>
-        <View style={row}>
-          <TextComponent
-            content={point}
-            family={fonts.semiBold}
-            weight={weights.fw500}
-            size={sizes.fs12}
-            styles={w50}
-          />
-          <TextComponent
-            content={rating}
-            family={fonts.semiBold}
-            weight={weights.fw500}
-            size={sizes.fs12}
-            color={colors.text2}
-          />
-        </View>
+        <ProgressBar percent={percent} />
+
+        <SingleStarRating rating={rating} />
       </View>
     </View>
   </TouchableOpacity>

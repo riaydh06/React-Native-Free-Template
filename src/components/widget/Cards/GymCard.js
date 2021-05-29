@@ -14,6 +14,7 @@ import {
   flex1,
   mb10,
 } from '../../../styles/commonStyle';
+import {SingleStarRating} from '..';
 
 const GymCard = ({title, subtitle, onPress, point, rating}) => (
   <TouchableOpacity style={[w100, mb10]} onPress={onPress}>
@@ -43,13 +44,7 @@ const GymCard = ({title, subtitle, onPress, point, rating}) => (
             size={sizes.fs12}
             styles={w50}
           />
-          <TextComponent
-            content={rating}
-            family={fonts.semiBold}
-            weight={weights.fw500}
-            size={sizes.fs12}
-            color={colors.text2}
-          />
+          <SingleStarRating rating={rating} />
         </View>
       </View>
     </View>

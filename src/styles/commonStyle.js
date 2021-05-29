@@ -57,6 +57,12 @@ export const mb40 = {
 };
 
 // margin left
+export const ml5 = {
+  marginLeft: 5,
+};
+export const ml10 = {
+  marginLeft: 10,
+};
 export const ml15 = {
   marginLeft: 15,
 };

@@ -11,6 +11,7 @@ const COLORS = {
   text2: '#424242',
   gradient: ['#1bdaf6', '#b2ebf9'],
   background: '#f5f5f5',
+  gray: '#eeeeee',
 };
 
 export const colors = COLORS;

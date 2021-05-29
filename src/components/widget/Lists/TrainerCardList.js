@@ -7,7 +7,7 @@ const TrainerCardList = ({items, onPress}) =>
       key={item.id}
       title={item.title}
       subtitle={item.subtitle}
-      point={item.point}
+      percent={item.percent}
       rating={item.rating}
       onPress={() => {}}
     />
