@@ -3,12 +3,12 @@ export {default as PageSecondary} from './page/PageSecondary';
 
 // cards
 export {default as ListHeader} from './Cards/ListHeader';
-export {default as VerticalCard} from './Cards/VerticalCard';
-export {default as HorizontalCard} from './Cards/HorizontalCard';
+export {default as GymCard} from './Cards/GymCard';
+export {default as FeaturedCard} from './Cards/FeaturedCard';
 
 // list
-export {default as VerticalList} from './Lists/VerticalList';
-export {default as HorizontalList} from './Lists/HorizontalList';
+export {default as GymCardList} from './Lists/GymCardList';
+export {default as FeaturedCardList} from './Lists/FeaturedCardList';
 
 // Modal
 export {default as ModalComponent} from './Modal/ModalComponent';

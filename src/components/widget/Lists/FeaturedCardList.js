@@ -1,11 +1,11 @@
 import React from 'react';
 import {ScrollView} from 'react-native';
-import HorizontalCard from '../Cards/HorizontalCard';
+import FeaturedCard from '../Cards/FeaturedCard';
 
-const HorizontalList = ({items, onPress}) => (
+const FeaturedCardList = ({items, onPress}) => (
   <ScrollView horizontal showsHorizontalScrollIndicator={false}>
     {items.map((item) => (
-      <HorizontalCard
+      <FeaturedCard
         key={item.id}
         title={item.title}
         subtitle={item.subtitle}
@@ -17,4 +17,4 @@ const HorizontalList = ({items, onPress}) => (
   </ScrollView>
 );
 
-export default HorizontalList;
+export default FeaturedCardList;

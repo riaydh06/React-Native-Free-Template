@@ -1,9 +1,9 @@
 import React from 'react';
-import VerticalCard from '../Cards/VerticalCard';
+import GymCard from '../Cards/GymCard';
 
-const VerticalList = ({items, onPress}) =>
+const GymCardList = ({items, onPress}) =>
   items.map((item) => (
-    <VerticalCard
+    <GymCard
       key={item.id}
       title={item.title}
       subtitle={item.subtitle}
@@ -13,4 +13,4 @@ const VerticalList = ({items, onPress}) =>
     />
   ));
 
-export default VerticalList;
+export default GymCardList;

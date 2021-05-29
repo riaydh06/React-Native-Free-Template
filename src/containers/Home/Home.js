@@ -2,8 +2,8 @@ import React from 'react';
 import {ScrollView, View} from 'react-native';
 import {
   PagePrimary,
-  HorizontalList,
-  VerticalList,
+  FeaturedCardList,
+  GymCardList,
   ListHeader,
 } from '../../components/widget';
 import {items} from '../../constants';
@@ -18,13 +18,13 @@ const Home = ({navigation}) => {
             title="Featured GYM"
             onPress={() => navigation.navigate('FeaturedGym')}
           />
-          <HorizontalList items={items} />
+          <FeaturedCardList items={items} />
 
           <ListHeader
             title="Featured Trainer"
             onPress={() => navigation.navigate('FeaturedTrainer')}
           />
-          <HorizontalList items={items} />
+          <FeaturedCardList items={items} />
         </View>
         <View style={ph15}>
           <ListHeader
@@ -32,14 +32,14 @@ const Home = ({navigation}) => {
             onPress={() => navigation.navigate('FeaturedGym')}
           />
         </View>
-        <VerticalList items={items} />
+        <GymCardList items={items} />
         <View style={ph15}>
           <ListHeader
             title="All Trainer"
             onPress={() => navigation.navigate('FeaturedTrainer')}
           />
         </View>
-        <VerticalList items={items} />
+        <GymCardList items={items} />
       </ScrollView>
     </PagePrimary>
   );

@@ -4,27 +4,25 @@ import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {TextComponent} from '../../ui';
 import {w100, pv15, row} from '../../../styles/commonStyle';
 
-const VerticalCard = ({title, onPress}) => {
-  return (
-    <View style={styles.wrapper}>
+const VerticalCard = ({title, onPress}) => (
+  <View style={styles.wrapper}>
+    <TextComponent
+      content={title}
+      family={fonts.semiBold}
+      weight={weights.fw500}
+      size={sizes.fs16}
+    />
+    <TouchableOpacity onPress={onPress}>
       <TextComponent
-        content={title}
+        content="SEE ALL"
         family={fonts.semiBold}
         weight={weights.fw500}
         size={sizes.fs16}
+        color={colors.text2}
       />
-      <TouchableOpacity onPress={onPress}>
-        <TextComponent
-          content="SEE ALL"
-          family={fonts.semiBold}
-          weight={weights.fw500}
-          size={sizes.fs16}
-          color={colors.text2}
-        />
-      </TouchableOpacity>
-    </View>
-  );
-};
+    </TouchableOpacity>
+  </View>
+);
 
 const styles = StyleSheet.create({
   wrapper: {
