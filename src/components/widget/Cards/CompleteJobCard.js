@@ -4,22 +4,12 @@ import {string, func, bool} from 'prop-types';
 import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {assets} from '../../../assets';
 import {TextComponent} from '../../ui';
-import {
-  mb5,
-  row,
-  mr15,
-  w100,
-  p15,
-  w50,
-  flex1,
-  mb10,
-} from '../../../styles/commonStyle';
-import SingleStarRating from '../Star/SingleStarRating';
+import {mb5, row, w100, m10, mb10, mr15} from '../../../styles/commonStyle';
 
-const GymCard = ({title, subtitle, onPress, point, rating}) => (
-  <TouchableOpacity style={[w100, mb10]} onPress={onPress}>
+const FeaturedCard = ({title, subtitle, onPress, point, rating}) => (
+  <TouchableOpacity style={styles.wrapper} onPress={onPress}>
     <View style={styles.contentWrapper}>
-      <View style={mr15}>
+      <View>
         <Image source={assets.Appointment02} style={styles.imageStyle} />
       </View>
       <View style={styles.leftWrapper}>
@@ -36,15 +26,20 @@ const GymCard = ({title, subtitle, onPress, point, rating}) => (
             size={sizes.fs12}
           />
         </View>
-        <View style={row}>
+        <View style={styles.bottomWrapper}>
           <TextComponent
             content={point}
             family={fonts.semiBold}
             weight={weights.fw500}
             size={sizes.fs12}
-            styles={w50}
           />
-          <SingleStarRating rating={rating} />
+          <TextComponent
+            content={rating}
+            family={fonts.semiBold}
+            weight={weights.fw500}
+            size={sizes.fs12}
+            color={colors.text2}
+          />
         </View>
       </View>
     </View>
@@ -52,32 +47,42 @@ const GymCard = ({title, subtitle, onPress, point, rating}) => (
 );
 
 const styles = StyleSheet.create({
+  wrapper: {
+    width: 280,
+    ...mb10,
+    ...mr15,
+  },
   contentWrapper: {
     ...w100,
-    flexDirection: 'row',
     backgroundColor: colors.white,
-    ...p15,
+    borderRadius: 10,
   },
   imageStyle: {
-    width: 100,
-    height: 100,
+    ...w100,
+    height: 135,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
   },
   leftWrapper: {
-    ...flex1,
-    flexGrow: 1,
+    ...m10,
+    height: 80,
+    justifyContent: 'space-between',
+  },
+  bottomWrapper: {
+    ...row,
     justifyContent: 'space-between',
   },
 });
 
-GymCard.propTypes = {
+FeaturedCard.propTypes = {
   title: string.isRequired,
   subtitle: string.isRequired,
   onPress: func.isRequired,
   loading: bool,
 };
 
-GymCard.defaultProps = {
+FeaturedCard.defaultProps = {
   loading: false,
 };
 
-export default GymCard;
+export default FeaturedCard;

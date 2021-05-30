@@ -14,6 +14,8 @@ import StepFive from '../containers/Auth/Steps/StepFive';
 import Success from '../containers/Auth/Success/Success';
 import FeaturedGym from '../containers/FeaturedGym/FeaturedGym';
 import FeaturedTrainer from '../containers/FeaturedTrainer/FeaturedTrainer';
+import GymDetails from '../containers/GymDetails/GymDetails';
+import TrainerDetails from '../containers/TrainerDetails/TrainerDetails';
 
 import {navigationOption} from '../constants/route';
 
@@ -70,6 +72,14 @@ const RootStack = createStackNavigator(
     FeaturedTrainer: {
       screen: FeaturedTrainer,
       navigationOptions: navigationOption(true, 'Featured Trainer'),
+    },
+    GymDetails: {
+      screen: GymDetails,
+      navigationOptions: navigationOption(true, 'GYM Details'),
+    },
+    TrainerDetails: {
+      screen: TrainerDetails,
+      navigationOptions: navigationOption(true, 'Trainer Details'),
     },
   },
   {

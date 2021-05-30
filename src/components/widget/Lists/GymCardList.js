@@ -9,7 +9,7 @@ const GymCardList = ({items, onPress}) =>
       subtitle={item.subtitle}
       point={item.point}
       rating={item.rating}
-      onPress={() => {}}
+      onPress={onPress}
     />
   ));
 

@@ -9,7 +9,7 @@ const TrainerCardList = ({items, onPress}) =>
       subtitle={item.subtitle}
       percent={item.percent}
       rating={item.rating}
-      onPress={() => {}}
+      onPress={onPress}
     />
   ));
 

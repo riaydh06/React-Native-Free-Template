@@ -1,14 +1,17 @@
 import React from 'react';
 import {ScrollView} from 'react-native';
-import {PagePrimary, GymCardList} from '../../components/widget';
+import {PagePrimary, TrainerCardList} from '../../components/widget';
 import {items} from '../../constants';
 import {w100} from '../../styles/commonStyle';
 
-const FeaturedTrainer = () => {
+const FeaturedTrainer = ({navigation}) => {
   return (
     <PagePrimary container={false}>
       <ScrollView style={w100}>
-        <GymCardList items={items} />
+        <TrainerCardList
+          items={items}
+          onPress={() => navigation.navigate('FeaturedTrainer')}
+        />
       </ScrollView>
     </PagePrimary>
   );

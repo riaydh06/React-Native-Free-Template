@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import SmoothPinCodeInput from 'react-native-smooth-pincode-input';
 import {ModalComponent, PagePrimary} from '../../../components/widget';
 import {
   ButtonPrimary,
@@ -25,13 +26,8 @@ const Email = ({navigation}) => {
         align="center"
         styles={mb15}
       />
-      <InputPrimary
-        placeholder="PLACEHOLDER.OTP"
-        value={otp}
-        secureTextEntry
-        onChangeText={(text) => setOtp(text)}
-        style={mb15}
-      />
+      <SmoothPinCodeInput value={otp} onTextChange={(code) => setOtp(code)} />
+
       <TextComponent
         i18n="SCREEN.OTP.RESEND_OTP"
         family={fonts.medium}
@@ -45,12 +41,12 @@ const Email = ({navigation}) => {
         content="BUTTON.CONTINUE"
         onPress={() => navigation.navigate('StepOne')}
       />
-      <ModalComponent
+      {/* <ModalComponent
         visible
         options={[]}
         onSelect={() => {}}
         onChange={() => {}}
-      />
+      /> */}
     </PagePrimary>
   );
 };

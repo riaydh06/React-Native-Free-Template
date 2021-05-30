@@ -5,7 +5,7 @@ import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
 import {assets} from '../../../assets';
 import {TextComponent} from '../../ui';
 import {mb5, mr15, w100, p15, flex1, mb10} from '../../../styles/commonStyle';
-import {SingleStarRating} from '..';
+import SingleStarRating from '../Star/SingleStarRating';
 import ProgressBar from '../ProgressBar';
 
 const TrainerCard = ({title, subtitle, onPress, percent, rating}) => (
