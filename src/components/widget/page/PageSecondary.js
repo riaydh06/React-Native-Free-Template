@@ -1,6 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
-import {assets} from '../../../assets';
+import {StyleSheet, View} from 'react-native';
 import {fonts, sizes} from '../../../styles/baseStyle';
 import {mb10, mb15, mt10} from '../../../styles/commonStyle';
 import {ButtonPrimary, TextComponent} from '../../ui';
@@ -8,7 +7,6 @@ import PagePrimary from './PagePrimary';
 
 const PageSecondary = ({children, step, title, onPress}) => (
   <PagePrimary>
-    <Image source={assets.Logo02} style={styles.iconWrapper} />
     <TextComponent
       i18n={step}
       family={fonts.semiBold}

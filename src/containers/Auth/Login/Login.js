@@ -8,14 +8,13 @@ import {
 } from '../../../components/ui';
 import {assets} from '../../../assets';
 import {fonts} from '../../../styles/baseStyle';
-import {mb15, mb30, mb40, mr15, mt15} from '../../../styles/commonStyle';
+import {mb15, mb30, mb40, mr15} from '../../../styles/commonStyle';
 
 const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
     <PagePrimary>
-      <Image source={assets.Logo02} style={[mt15, mb15]} />
       <TextComponent i18n="SCREEN.LOGIN.TITLE" styles={mb15} />
       <InputPrimary
         placeholder="PLACEHOLDER.EMAIL"
