@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, TextInput, View} from 'react-native';
 import {string, bool, func, number} from 'prop-types';
 import {fonts, colors} from '../../../styles/baseStyle';
-import {strings} from '../../../locales/i18n';
+import {strings} from '../../../translation/i18n';
 
 const InputPrimary = ({
   placeholder,
