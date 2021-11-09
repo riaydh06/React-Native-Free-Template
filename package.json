@@ -2,8 +2,9 @@
   "name": "React-Native-Free-Template",
   "version": "1.0.0",
   "author": "Sayed-Riaydh",
-  "publishConfig": {
-    "registry": "<linkToNexusRepo>"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riaydh06/React-Native-Free-Template"
   },
   "scripts": {
     "android": "react-native run-android",
