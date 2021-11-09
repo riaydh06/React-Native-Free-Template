@@ -1,16 +1,16 @@
 {
   "name": "react-native-template-free",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native template for a quick start with javascript",
   "private": false,
-  "author": "Sayed-Riaydh",
+  "author": "Sayed Riaydh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/riaydh06/React-Native-Free-Template"
+    "url": "git+https://github.com/riaydh06/react-native-free-template"
   },
   "bugs": {
-    "url": "https://github.com/riaydh06/React-Native-Free-Template/issues"
+    "url": "https://github.com/riaydh06/react-native-free-template/issues"
   },
   "keywords": [
     "react-native",
