@@ -1,7 +1,10 @@
 {
-  "name": "React-Native-Template-Free",
+  "name": "React-Native-Free-Template",
   "version": "1.0.0",
   "author": "Sayed-Riaydh",
+  "publishConfig": {
+    "registry": "<linkToNexusRepo>"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
