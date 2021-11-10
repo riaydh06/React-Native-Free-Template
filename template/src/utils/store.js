@@ -25,3 +25,10 @@ export const getFailedState = (data = {}) => ({
   isLoaded: false,
   isError: true,
 });
+
+export const isLoading = (state = {}) => !!state.isLoading;
+export const isLoaded = (state = {}) => !!state.isLoaded;
+export const isError = (state = {}) => !!state.isError;
+
+export const getData = (state = {}, defaultValue = {}) =>
+  state.data || defaultValue;
