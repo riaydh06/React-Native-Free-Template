@@ -6,11 +6,11 @@ import {
   View,
 } from 'react-native';
 import {string, func, bool} from 'prop-types';
-import {colors, fonts, weights} from '../../../styles/baseStyle';
+import {colors, fonts, weights} from '../../styles/baseStyle';
 import TextComponent from '../Text/TextComponent';
-import {strings} from '../../../translation/i18n';
+import {strings} from '../../translation/i18n';
 
-const ButtonSecondary = ({content, disabled, onPress, loading, style}) => {
+const ButtonPrimary = ({content, disabled, onPress, loading, style}) => {
   const opacity = disabled ? 0.5 : 1;
   return (
     <TouchableOpacity
@@ -41,13 +41,12 @@ const ButtonSecondary = ({content, disabled, onPress, loading, style}) => {
 const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
-    alignItems: 'center',
   },
   viewWrapper: {
-    width: 200,
+    width: '100%',
     height: 52,
     backgroundColor: colors.secondary,
-    borderRadius: 25,
+    borderRadius: 4,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -59,16 +58,16 @@ const styles = StyleSheet.create({
   },
 });
 
-ButtonSecondary.propTypes = {
+ButtonPrimary.propTypes = {
   content: string.isRequired,
   onPress: func.isRequired,
   disabled: bool,
   loading: bool,
 };
 
-ButtonSecondary.defaultProps = {
+ButtonPrimary.defaultProps = {
   disabled: false,
   loading: false,
 };
 
-export default ButtonSecondary;
+export default ButtonPrimary;

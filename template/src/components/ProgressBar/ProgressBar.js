@@ -2,7 +2,8 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {colors, fonts, sizes, weights} from '../../styles/baseStyle';
 import {mr10, row} from '../../styles/commonStyle';
-import {TextComponent} from '../ui';
+import TextComponent from '../Text/TextComponent';
+
 const ProgressBar = ({slot, percent}) => (
   <View style={styles.wrapper}>
     <View style={styles.progressWrapper}>

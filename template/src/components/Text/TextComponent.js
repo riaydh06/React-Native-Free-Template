@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {colors, fonts, sizes} from '../../../styles/baseStyle';
+import {colors, fonts, sizes} from '../../styles/baseStyle';
 import {string, number, oneOfType} from 'prop-types';
-import {strings} from '../../../translation/i18n';
+import {strings} from '../../translation/i18n';
 const TextComponent = ({
   i18n,
   value,

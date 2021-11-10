@@ -9,12 +9,12 @@ import {
 } from 'react-native';
 import styled from 'styled-components';
 import {string, bool, func, array} from 'prop-types';
-import assets from '../../../assets';
-import {fonts, colors} from '../../../styles/baseStyle';
-import {crossButton, pt10, mb20, mb5} from '../../../styles/commonStyle';
+import assets from '../../assets';
+import {fonts, colors} from '../../styles/baseStyle';
+import {crossButton, pt10, mb20, mb5} from '../../styles/commonStyle';
 // import InputSearch from '../../ui/Input/InputSearch';
-import {ButtonPrimary, TextComponent} from '../../ui';
-import {truncateString} from '../../../utils';
+import {ButtonPrimary, TextComponent} from '../../components';
+import {truncateString} from '../../utils';
 
 const listItems = (items, onSelect, multiContact) => (
   <View style={pt10}>

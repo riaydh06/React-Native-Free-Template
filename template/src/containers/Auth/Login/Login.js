@@ -1,11 +1,7 @@
 import React, {useState} from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
-import {PagePrimary} from '../../../components/widget';
-import {
-  ButtonPrimary,
-  InputPrimary,
-  TextComponent,
-} from '../../../components/ui';
+import {PagePrimary} from '../../../components';
+import {ButtonPrimary, InputPrimary, TextComponent} from '../../../components';
 import {assets} from '../../../assets';
 import {fonts} from '../../../styles/baseStyle';
 import {mb15, mb30, mb40, mr15} from '../../../styles/commonStyle';

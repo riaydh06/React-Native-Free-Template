@@ -1,5 +1,4 @@
 import axios from 'axios';
-// import { store } from './redux/store/configureStore';
 
 const DEV_URLS = {
   backEndUrl: 'http://dev/',
@@ -21,24 +20,11 @@ export const axiosInstance = axios.create({
   headers: {},
 });
 
-// axiosInstance.defaults.headers.common.Authorization = 'Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9....';
+// axiosInstance.defaults.headers.common.Authorization = 'Token eyJ0eX....';
 
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response && error.response.status === 401) {
-      // store.dispatch({
-      //   type: 'auth_logout',
-      // });
-    }
-
-    if (!error.response) {
-      error.response = {
-        data: {
-          error_code: 'CNP',
-        },
-      };
-    }
     return Promise.reject(error);
   },
 );

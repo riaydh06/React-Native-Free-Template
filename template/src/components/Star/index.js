@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {View, Image, TouchableOpacity, ImageBackground} from 'react-native';
-import {assets} from '../../../assets';
+import {assets} from '../../assets';
 
 export default class StarReview extends Component {
   constructor(props) {

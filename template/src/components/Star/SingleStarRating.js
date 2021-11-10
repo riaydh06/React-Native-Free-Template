@@ -1,9 +1,9 @@
 import React from 'react';
 import {Image, StyleSheet, View} from 'react-native';
-import {assets} from '../../../assets';
-import {colors, fonts, sizes, weights} from '../../../styles/baseStyle';
-import {mr5, row} from '../../../styles/commonStyle';
-import {TextComponent} from '../../ui';
+import {assets} from '../../assets';
+import {colors, fonts, sizes, weights} from '../../styles/baseStyle';
+import {mr5, row} from '../../styles/commonStyle';
+import TextComponent from '../Text/TextComponent';
 
 const SingleStarRating = ({rating}) => (
   <View style={styles.wrapper}>

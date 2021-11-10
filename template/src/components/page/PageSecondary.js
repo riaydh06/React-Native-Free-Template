@@ -1,8 +1,9 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {fonts, sizes} from '../../../styles/baseStyle';
-import {mb10, mb15, mt10} from '../../../styles/commonStyle';
-import {ButtonPrimary, TextComponent} from '../../ui';
+import {fonts, sizes} from '../../styles/baseStyle';
+import {mb10, mb15, mt10} from '../../styles/commonStyle';
+import ButtonPrimary from '../Button/ButtonPrimary';
+import TextComponent from '../Text/TextComponent';
 import PagePrimary from './PagePrimary';
 
 const PageSecondary = ({children, step, title, onPress}) => (
