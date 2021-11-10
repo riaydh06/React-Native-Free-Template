@@ -10,7 +10,7 @@ import {
 import styled from 'styled-components';
 import {string, bool, func, array} from 'prop-types';
 import assets from '../../assets';
-import {fonts, colors} from '../../styles/baseStyle';
+import {fonts, colors} from '@baseStyle';
 import {crossButton, pt10, mb20, mb5} from '../../styles/commonStyle';
 // import InputSearch from '../../ui/Input/InputSearch';
 import {ButtonPrimary, TextComponent} from '../../components';

@@ -1,4 +1,4 @@
-import {colors, fonts, sizes} from '../styles/baseStyle';
+import {colors, fonts, sizes} from '@baseStyle';
 
 export const navigationOption = (show, title, background, color) => {
   if (show) {

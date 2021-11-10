@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@actions/*": ["src/actions/*"],
+      "@actions": ["src/actions/index.js"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components/index.js"],
+      "@containers/*": ["src/containers/*"],
+      "@containers": ["src/containers/index.js"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants/index.js"],
+      "@baseStyle": ["src/styles/baseStyle.js"],
+      "@commonStyle": ["src/styles/commonStyle.js"],
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils/index.js"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "coverage", "report"]
+}

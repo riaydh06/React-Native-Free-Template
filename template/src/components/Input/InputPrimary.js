@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, TextInput, View} from 'react-native';
 import {string, bool, func, number} from 'prop-types';
-import {fonts, colors} from '../../styles/baseStyle';
+import {fonts, colors} from '@baseStyle';
 import {strings} from '../../translation/i18n';
 
 const InputPrimary = ({

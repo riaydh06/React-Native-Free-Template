@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
-import {PagePrimary} from '../../../components';
-import {ButtonPrimary, InputPrimary, TextComponent} from '../../../components';
-import {assets} from '../../../assets';
-import {fonts} from '../../../styles/baseStyle';
-import {mb15, mb30, mb40, mr15} from '../../../styles/commonStyle';
+import {PagePrimary, TextComponent} from '@components';
+import {ButtonPrimary, InputPrimary} from '@components';
+import {assets} from '@assets';
+import {fonts} from '@baseStyle';
+import {mb15, mb30, mb40, mr15} from '@commonStyle';
 
 const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
