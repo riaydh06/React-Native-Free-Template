@@ -6,6 +6,7 @@ import {
   View,
 } from 'react-native';
 import {string, func, bool} from 'prop-types';
+
 import {colors, fonts, weights} from '@baseStyle';
 import TextComponent from '../Text/TextComponent';
 import {strings} from '../../translation/i18n';

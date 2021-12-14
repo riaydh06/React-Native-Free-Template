@@ -1,22 +1,14 @@
 import React from 'react';
-import {
-  Modal,
-  Image,
-  TouchableOpacity,
-  ScrollView,
-  View,
-  StyleSheet,
-} from 'react-native';
-import styled from 'styled-components';
+import {Modal, TouchableOpacity, View, StyleSheet} from 'react-native';
 import {string, bool, func, array} from 'prop-types';
-import assets from '../../assets';
-import {fonts, colors} from '@baseStyle';
-import {crossButton, pt10, mb20, mb5} from '../../styles/commonStyle';
-// import InputSearch from '../../ui/Input/InputSearch';
-import {ButtonPrimary, TextComponent} from '../../components';
-import {truncateString} from '../../utils';
 
-const listItems = (items, onSelect, multiContact) => (
+import {fonts, colors} from '@baseStyle';
+import {crossButton, pt10, mb20, mb5} from '@commonStyle';
+import {ButtonPrimary, TextComponent} from '@components';
+import {truncateString} from '../../utils';
+import assets from '../../assets';
+
+const ListItems = (items, onSelect, multiContact) => (
   <View style={pt10}>
     {items.map((item, index) => (
       <ListItem subLabel={item.subLabel} key={item.id}>
@@ -185,12 +177,6 @@ const styles = StyleSheet.create({
   listItemWrapper: {
     maxHeight: 200,
   },
-  // ListItem :{
-  //   border-bottom-width: 1,
-  //   border-bottom-color: ${colors.light},
-  //   padding-bottom: ${(props) => (props.subLabel ? 5 : 15)},
-  //   margin-bottom: ${(props) => (props.subLabel ? 5 : 15)};
-  // `;
 });
 
 ModalComponent.propTypes = {

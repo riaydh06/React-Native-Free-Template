@@ -1,6 +1,6 @@
 {
   "name": "react-native-free-template",
-  "version": "1.0.0",
+  "version": "1.0.11",
   "description": "React Native template for a quick start with javascript",
   "private": false,
   "author": "Sayed Riaydh",
@@ -13,7 +13,10 @@
     "url": "https://github.com/riaydh06/react-native-free-template/issues"
   },
   "keywords": [
-    "react-native",
+    "react",
+    "react-native-template",
+    "react-native-boilerplate",
+    "javascript",
     "jest",
     "template",
     "boilerplate"
