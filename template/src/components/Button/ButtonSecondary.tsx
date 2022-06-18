@@ -1,17 +1,30 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {
   ActivityIndicator,
   StyleSheet,
   TouchableOpacity,
   View,
 } from 'react-native';
-import {string, func, bool} from 'prop-types';
 
 import {colors, fonts, weights} from '@baseStyle';
 import TextComponent from '../Text/TextComponent';
 import {strings} from '../../translation/i18n';
 
-const ButtonPrimary = ({content, disabled, onPress, loading, style}) => {
+interface Props {
+  content: string;
+  disabled: boolean;
+  onPress: Function;
+  loading: boolean;
+  style: any;
+}
+
+const ButtonSecondary: FC<Props> = ({
+  content,
+  disabled,
+  onPress,
+  loading,
+  style,
+}) => {
   const opacity = disabled ? 0.5 : 1;
   return (
     <TouchableOpacity
@@ -42,12 +55,13 @@ const ButtonPrimary = ({content, disabled, onPress, loading, style}) => {
 const styles = StyleSheet.create({
   wrapper: {
     width: '100%',
+    alignItems: 'center',
   },
   viewWrapper: {
-    width: '100%',
+    width: 200,
     height: 52,
     backgroundColor: colors.secondary,
-    borderRadius: 4,
+    borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -59,16 +73,9 @@ const styles = StyleSheet.create({
   },
 });
 
-ButtonPrimary.propTypes = {
-  content: string.isRequired,
-  onPress: func.isRequired,
-  disabled: bool,
-  loading: bool,
-};
-
-ButtonPrimary.defaultProps = {
+ButtonSecondary.defaultProps = {
   disabled: false,
   loading: false,
 };
 
-export default ButtonPrimary;
+export default ButtonSecondary;

@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {Text} from 'react-native';
 import {colors, fonts, sizes} from '@baseStyle';
-import {string, number, oneOfType} from 'prop-types';
 import {strings} from '../../translation/i18n';
-const TextComponent = ({
+
+interface Props {
+  i18n: any;
+  value: any;
+  content: string;
+  family: string;
+  weight: string | number;
+  size: number;
+  color: string;
+  style: any;
+  styles: any;
+  align: string;
+  children: any;
+}
+
+const TextComponent: FC<Props> = ({
   i18n,
   value,
   content,
@@ -41,16 +55,6 @@ TextComponent.defaultProps = {
   align: 'left',
   weight: 'normal',
   style: 'normal',
-};
-
-TextComponent.propTypes = {
-  content: string.isRequired,
-  family: string,
-  color: string,
-  size: number,
-  align: string,
-  weight: oneOfType([string, number]),
-  style: string,
 };
 
 export default TextComponent;
