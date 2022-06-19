@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import {assets} from '../../assets';
 import {colors, fonts, sizes, weights} from '@baseStyle';
 import {mr5, row} from '@commonStyle';
 import TextComponent from '../Text/TextComponent';
 
-const SingleStarRating = ({rating}) => (
+interface Props {
+  rating: any;
+}
+
+const SingleStarRating: FC<Props> = ({rating}) => (
   <View style={styles.wrapper}>
     <Image source={assets.StarFilled} style={styles.imageStyle} />
     <TextComponent

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {FC, ReactNode} from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
-import {colors} from '@baseStyle';
 import {flex1, pl15, pr15} from '@commonStyle';
+import {colors} from '@baseStyle';
 
-const PagePrimary = ({children, style, container}) => (
+interface Props {
+  children: ReactNode;
+  style: any;
+  container: any;
+}
+
+const PagePrimary: FC<Props> = ({children, style, container}) => (
   <SafeAreaView style={flex1}>
     <View style={[styles.wrapper, style, container && styles.container]}>
       {children}

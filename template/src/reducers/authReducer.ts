@@ -6,7 +6,7 @@ const initialState = {
   logout: getInitialState(),
 };
 
-const authReducer = (state = initialState, action) => {
+const authReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case AUTH.USER_LOGIN_START:
       return {

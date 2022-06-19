@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC, ReactNode} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {fonts, sizes} from '@baseStyle';
 import {mb10, mb15, mt10} from '@commonStyle';
@@ -6,7 +6,14 @@ import ButtonPrimary from '../Button/ButtonPrimary';
 import TextComponent from '../Text/TextComponent';
 import PagePrimary from './PagePrimary';
 
-const PageSecondary = ({children, step, title, onPress}) => (
+interface Props {
+  children: ReactNode;
+  step: any;
+  title: string;
+  onPress: Function;
+}
+
+const PageSecondary: FC<Props> = ({children, step, title, onPress}) => (
   <PagePrimary>
     <TextComponent
       i18n={step}

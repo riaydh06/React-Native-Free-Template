@@ -1,10 +1,28 @@
-import React from 'react';
-import {StyleSheet, TextInput, View} from 'react-native';
-import {string, bool, func, number} from 'prop-types';
+import React, {FC} from 'react';
+import {KeyboardTypeOptions, StyleSheet, TextInput, View} from 'react-native';
 import {fonts, colors} from '@baseStyle';
 import {strings} from '../../translation/i18n';
 
-const InputPrimary = ({
+interface Props {
+  placeholder: string;
+  submit: any;
+  onChangeText: any;
+  value: string;
+  onBlur: any;
+  keyboardType: KeyboardTypeOptions;
+  onFocus: any;
+  maxLength: number;
+  secureTextEntry: boolean;
+  placeholderTextColor: string;
+  autoFocus: boolean;
+  editable: boolean;
+  textContentType: any;
+  multiline: boolean;
+  contextMenuHidden: boolean;
+  style: any;
+}
+
+const InputPrimary: FC<Props> = ({
   placeholder,
   submit,
   onChangeText,
@@ -64,24 +82,6 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
   },
 });
-
-InputPrimary.propTypes = {
-  placeholder: string.isRequired,
-  submit: bool,
-  onChangeText: func.isRequired,
-  value: string.isRequired,
-  onBlur: func,
-  onFocus: func,
-  keyboardType: string,
-  maxLength: number,
-  secureTextEntry: bool,
-  placeholderTextColor: string,
-  autoFocus: bool,
-  textContentType: string,
-  editable: bool,
-  multiline: bool,
-  contextMenuHidden: bool,
-};
 
 InputPrimary.defaultProps = {
   submit: false,

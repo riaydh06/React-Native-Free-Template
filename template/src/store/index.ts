@@ -2,7 +2,7 @@ import ReduxThunk from 'redux-thunk';
 import {createStore, applyMiddleware} from 'redux';
 import appReducer from '../reducers';
 
-const rootReducer = (state, action) => {
+const rootReducer = (state: any, action: any) => {
   return appReducer(state, action);
 };
 

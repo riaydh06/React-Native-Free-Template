@@ -1,5 +1,26 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@actions/*": ["src/actions/*"],
+      "@actions": ["src/actions/index.ts"],
+      "@assets/*": ["src/assets/*"],
+      "@assets": ["src/assets/index.ts"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components/index.ts"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants/index.ts"],
+      "@containers/*": ["src/containers/*"],
+      "@containers": ["src/containers/index.tsx"],
+      "@helpers/*": ["src/helpers/*"],
+      "@helpers": ["src/helpers/index.ts"],
+      "@validations/*": ["src/validations/*"],
+      "@validations": ["src/validations/index.ts"],
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils/index.ts"],
+      "@commonStyle": ["src/styles/commonStyle.ts"],
+      "@baseStyle": ["src/styles/baseStyle.ts"]
+    },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

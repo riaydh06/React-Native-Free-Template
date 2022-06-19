@@ -1,6 +1,11 @@
 import {colors, fonts, sizes} from '@baseStyle';
 
-export const navigationOption = (show, title, background, color) => {
+export const navigationOption = (
+  show: boolean,
+  title: string,
+  background: string,
+  color: string,
+) => {
   if (show) {
     return {
       title,

@@ -26,9 +26,9 @@ export const getFailedState = (data = {}) => ({
   isError: true,
 });
 
-export const isLoading = (state = {}) => !!state.isLoading;
-export const isLoaded = (state = {}) => !!state.isLoaded;
-export const isError = (state = {}) => !!state.isError;
+export const isLoading: any = (state = {isLoading}) => !!state.isLoading;
+export const isLoaded: any = (state = {isLoaded}) => !!state.isLoaded;
+export const isError: any = (state = {isError}) => !!state.isError;
 
 export const getData = (state = {}, defaultValue = {}) =>
   state.data || defaultValue;

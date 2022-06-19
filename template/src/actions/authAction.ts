@@ -10,7 +10,7 @@ export const loginSuccess = () => ({
   type: AUTH.USER_LOGIN_SUCCESS,
 });
 
-export const loginAction = (postData) => (dispatch) => {
+export const loginAction = (postData: any) => (dispatch: any) => {
   dispatch(loginStart());
   return axiosInstance
     .get(URLS.LOGIN, postData)
@@ -28,7 +28,7 @@ export const logoutSuccess = () => ({
   type: AUTH.USER_LOGOUT_SUCCESS,
 });
 
-export const logoutAction = (postData) => (dispatch) => {
+export const logoutAction = (postData: any) => (dispatch: any) => {
   dispatch(logoutStart());
   return axiosInstance
     .get(URLS.LOGOUT, postData)

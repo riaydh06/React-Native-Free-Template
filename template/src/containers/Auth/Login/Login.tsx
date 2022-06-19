@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {PagePrimary, TextComponent} from '@components';
 import {ButtonPrimary, InputPrimary} from '@components';
@@ -6,7 +6,11 @@ import {assets} from '@assets';
 import {fonts} from '@baseStyle';
 import {mb15, mb30, mb40, mr15} from '@commonStyle';
 
-const Login = ({navigation}) => {
+interface Props {
+  navigation: any;
+}
+
+const Login: FC<Props> = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
@@ -15,14 +19,14 @@ const Login = ({navigation}) => {
       <InputPrimary
         placeholder="PLACEHOLDER.EMAIL"
         value={email}
-        onChangeText={(text) => setEmail(text)}
+        onChangeText={(text: any) => setEmail(text)}
         style={mb15}
       />
       <InputPrimary
         placeholder="PLACEHOLDER.PASSWORD"
         value={password}
         secureTextEntry
-        onChangeText={(text) => setPassword(text)}
+        onChangeText={(text: any) => setPassword(text)}
         style={mb15}
       />
       <ButtonPrimary

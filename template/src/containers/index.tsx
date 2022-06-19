@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React, {FC, useEffect} from 'react';
 import RootStack from '../routes';
 import SplashScreen from 'react-native-splash-screen';
 
-const Index = () => {
+const Index: FC = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
