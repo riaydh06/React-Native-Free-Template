@@ -30,5 +30,5 @@ export const isLoading: any = (state = {isLoading}) => !!state.isLoading;
 export const isLoaded: any = (state = {isLoaded}) => !!state.isLoaded;
 export const isError: any = (state = {isError}) => !!state.isError;
 
-export const getData = (state = {}, defaultValue = {}) =>
+export const getData = (state = {data: {}}, defaultValue = {}) =>
   state.data || defaultValue;

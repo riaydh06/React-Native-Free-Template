@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 import {assets} from '../../assets';
 import {colors, fonts, sizes, weights} from '@baseStyle';
-import {mr5, row} from '@commonStyle';
+import {mr5} from '@commonStyle';
 import TextComponent from '../Text/TextComponent';
 
 interface Props {
@@ -24,7 +24,7 @@ const SingleStarRating: FC<Props> = ({rating}) => (
 
 const styles = StyleSheet.create({
   wrapper: {
-    ...row,
+    flexDirection: 'row',
     alignItems: 'center',
   },
   imageStyle: {
