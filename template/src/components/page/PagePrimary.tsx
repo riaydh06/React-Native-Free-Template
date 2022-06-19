@@ -5,8 +5,8 @@ import {colors} from '@baseStyle';
 
 interface Props {
   children: ReactNode;
-  style: any;
-  container: any;
+  style?: any;
+  container?: any;
 }
 
 const PagePrimary: FC<Props> = ({children, style, container}) => (

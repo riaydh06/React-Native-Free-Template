@@ -4,13 +4,13 @@ const DEV_URLS = {
   backEndUrl: 'http://dev/',
 };
 
-const STAGING_URLS = {
-  backEndUrl: 'https://staging/',
-};
+// const STAGING_URLS = {
+//   backEndUrl: 'https://staging/',
+// };
 
-const PRODUCTION_URLS = {
-  backEndUrl: 'https://backend/',
-};
+// const PRODUCTION_URLS = {
+//   backEndUrl: 'https://backend/',
+// };
 
 export const ACTIVE_URLS = DEV_URLS; // Change this line for production and staging.
 

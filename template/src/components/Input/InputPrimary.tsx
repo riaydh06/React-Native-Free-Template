@@ -4,22 +4,22 @@ import {fonts, colors} from '@baseStyle';
 import {strings} from '../../translation/i18n';
 
 interface Props {
-  placeholder: string;
-  submit: any;
-  onChangeText: any;
-  value: string;
-  onBlur: any;
-  keyboardType: KeyboardTypeOptions;
-  onFocus: any;
-  maxLength: number;
-  secureTextEntry: boolean;
-  placeholderTextColor: string;
-  autoFocus: boolean;
-  editable: boolean;
-  textContentType: any;
-  multiline: boolean;
-  contextMenuHidden: boolean;
-  style: any;
+  placeholder?: string;
+  submit?: any;
+  onChangeText?: any;
+  value?: string;
+  onBlur?: any;
+  keyboardType?: KeyboardTypeOptions;
+  onFocus?: any;
+  maxLength?: number;
+  secureTextEntry?: boolean;
+  placeholderTextColor?: string;
+  autoFocus?: boolean;
+  editable?: boolean;
+  textContentType?: any;
+  multiline?: boolean;
+  contextMenuHidden?: boolean;
+  style?: any;
 }
 
 const InputPrimary: FC<Props> = ({

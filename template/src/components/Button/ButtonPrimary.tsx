@@ -12,10 +12,10 @@ import {strings} from '../../translation/i18n';
 
 interface Props {
   content: string;
-  disabled: boolean;
-  onPress: Function;
-  loading: boolean;
-  style: any;
+  disabled?: boolean;
+  onPress?: any;
+  loading?: boolean;
+  style?: any;
 }
 
 const ButtonPrimary: FC<Props> = ({
@@ -35,7 +35,7 @@ const ButtonPrimary: FC<Props> = ({
         {loading && (
           <ActivityIndicator
             size="small"
-            color={colors.colorText}
+            color={colors.text}
             style={styles.loaderStyle}
           />
         )}
@@ -44,7 +44,6 @@ const ButtonPrimary: FC<Props> = ({
             content={strings(content)}
             family={fonts.semiBold}
             weight={weights.fw500}
-            disabled
           />
         )}
       </View>

@@ -15,7 +15,17 @@
           ".jsx",
           ".js",
           ".json"
-        ]
+        ],
+        "alias": {
+          "@actions": "./src/actions",
+          "@assets": "./src/assets",
+          "@components": "./src/components",
+          "@containers": "./src/containers",
+          "@constants": "./src/constants",
+          "@baseStyle": "./src/styles/baseStyle",
+          "@commonStyle": "./src/styles/commonStyle",
+          "@utils": "./src/utils"
+        }
       }
     ]
   ]

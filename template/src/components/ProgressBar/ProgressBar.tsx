@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {colors, fonts, sizes, weights} from '@baseStyle';
-import {mr10, row} from '@commonStyle';
+import {mr10} from '@commonStyle';
 import TextComponent from '../Text/TextComponent';
 
 interface Props {
@@ -24,7 +24,7 @@ const ProgressBar: FC<Props> = ({slot, percent}) => (
 );
 const styles = StyleSheet.create({
   wrapper: {
-    ...row,
+    flexDirection: 'row',
     alignItems: 'center',
   },
   progressWrapper: {

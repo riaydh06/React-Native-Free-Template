@@ -4,17 +4,17 @@ import {colors, fonts, sizes} from '@baseStyle';
 import {strings} from '../../translation/i18n';
 
 interface Props {
-  i18n: any;
-  value: any;
-  content: string;
-  family: string;
-  weight: string | number;
-  size: number;
-  color: string;
-  style: any;
-  styles: any;
-  align: string;
-  children: any;
+  i18n?: any;
+  value?: any;
+  content?: string;
+  family?: string;
+  weight?: string | number;
+  size?: number;
+  color?: string;
+  style?: any;
+  styles?: any;
+  align?: string;
+  children?: any;
 }
 
 const TextComponent: FC<Props> = ({
