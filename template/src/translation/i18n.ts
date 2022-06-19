@@ -23,11 +23,11 @@ export const isRTL =
 ReactNative.I18nManager.allowRTL(isRTL);
 
 // The method we'll use instead of a regular string
-export function strings(name, params = {}) {
+export function strings(name: any, params = {}) {
   return I18n.t(name, params);
 }
 
-export const switchLanguage = (lang, component) => {
+export const switchLanguage = (lang: any, component: any) => {
   I18n.locale = lang;
   component.forceUpdate();
 };
